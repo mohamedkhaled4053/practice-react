@@ -1,5 +1,5 @@
 import React from 'react'
-import Final from './tutorial/11-react-router/final/index'
+import Final from './tutorial/8-useContext/setup/1-context-api'
 function App() {
   return (
     <div className='container'>
