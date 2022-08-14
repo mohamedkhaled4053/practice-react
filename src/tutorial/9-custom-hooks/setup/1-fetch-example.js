@@ -5,20 +5,12 @@ import { useFetch } from './2-useFetch'
 // I SWITCHED TO PERMANENT DOMAIN
 const url = 'https://course-api.com/javascript-store-products'
 
+
+
 const Example = () => {
-  const [loading, setLoading] = useState(true)
-  const [products, setProducts] = useState([])
 
-  const getProducts = async () => {
-    const response = await fetch(url)
-    const products = await response.json()
-    setProducts(products)
-    setLoading(false)
-  }
-
-  useEffect(() => {
-    getProducts()
-  }, [url])
+  let {loading, products} = useFetch(url)
+  
   console.log(products)
   return (
     <div>
