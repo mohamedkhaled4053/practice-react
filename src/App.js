@@ -1,5 +1,5 @@
 import React from 'react'
-import Final from './tutorial/9-custom-hooks/setup/1-fetch-example'
+import Final from './tutorial/10-prop-types/setup/index'
 function App() {
   return (
     <div className='container'>
